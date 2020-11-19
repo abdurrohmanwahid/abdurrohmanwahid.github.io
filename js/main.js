@@ -118,10 +118,12 @@
         
     });
     
-    // You're a PROZARD Harry !
-    // Im a wot ??
-    // A PROGRAMMER WIZARD !!
-    
-    // Why am i so salty, LOL
-    
 })(jQuery);
+
+function myFunction(imgs) {
+  var expandImg = document.getElementById("expandedImg");
+  var imgText = document.getElementById("imgtext");
+  expandImg.src = imgs.src;
+  imgText.innerHTML = imgs.alt;
+  expandImg.parentElement.style.display = "block";
+}
